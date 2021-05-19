@@ -1,0 +1,82 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Main Page Styling */
+.mainTitle {
+    font-size: 75px;
+    margin: 45px;
+}
+
+.naveBtn {
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+    text-decoration: none;
+    border-bottom: 2px solid;
+    font-size: 25px;
+    margin: 30px;
+}
+
+/* Profile Page Styling */
+.userHeader {
+    font-size: 30px;
+    margin: 20px;
+}
+
+.newPost {
+    width: 75%;
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.userpageHeader {
+    font-size: 25px;
+    margin: 20px 20px 20px 30px;
+}
+
+.title {
+    font-size: 25px;
+    margin: 30px 20px 30px 10px;
+    width: 95%;
+    padding-bottom: 10px;
+    border-bottom: 3px solid;
+}
+
+.blogPost {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid;
+    padding: 30px;
+    margin-bottom: 50px;
+}
+
+.blogPostTitle {
+    font-size: 25px;
+    padding-bottom: 5px;
+    font-weight: bolder;
+}
+
+.blogPostData {
+    font-size: 20px;
+    border: 2px dashed;
+    padding: 15px;
+}
+
+.postBtn {
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+    font-size: 20px;
+    padding-top: 5px;
+}

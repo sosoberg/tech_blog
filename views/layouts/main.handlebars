@@ -12,15 +12,15 @@
 <body>
   <div>
     <header>
-      <h1>Techy Blog</h1>
+      <h1 class="mainTitle">Techy Blog</h1>
       <nav>
         <!-- Conditionally render login or logout links -->
-        <a href="/">Main Page</a> 
+        <a href="/" class="naveBtn">Main Page</a> 
         {{#if logged_in}}
-        <a href="/profile">Profile</a> |
-        <button class="no-button" id="logout">Logout</button>
+        <a href="/profile" class="naveBtn">Profile</a> |
+        <button  class="naveBtn" id="logout">Logout</button>
         {{else}}
-        <a href="/login">Login</a>
+        <a href="/login" class="naveBtn">Login</a>
         {{/if}}
       </nav>
     </header>

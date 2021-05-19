@@ -1,30 +1,35 @@
 
 <h2 class="userHeader">{{username}}'s Blog!</h2>
 
-<h3 class="userpageHeader">Share your Post:</h3>
-<form class="form new-post-form">
-    <div class="recipeSubmit">
-        <label for="project-name">Blog name:</label>
-        <input class="form-input" type="text" id="post-name" name="title" />
-    </div>
-    <div class="recipeSubmit">
-        <label for="project-funding">Blog Post:</label>
-        <input class="form-input" type="text" id="blogPost" name="blogPost" />
-    </div>
-    <button type="submit" class="create">Create!</button>
-</form>
-
-<h2 class = "title">Your Blog Posts:</h2>
-    <div>
-    {{#each posts as |post|}}
-        <h3>{{post.title}}</h3>
-                {{#if post.blogPost}}
-                <p>{{ post.blogPost }}</p>
-                <button class="delete_recipe" value = {{post.id}}>Delete</button>
-                {{else}}
-                <button class="delete_recipe" value = {{post.id}}>Delete</button>
-                {{/if }}
-        {{/each}}
+<div class="newPost">
+    <h3 class="userpageHeader">Create a Post:</h3>
+    <form class="form new-post-form">
+        <div class="recipeSubmit">
+            <label for="project-name">Blog name:</label>
+            <input class="form-input" type="text" id="post-name" name="title" />
         </div>
+        <div class="recipeSubmit">
+            <label for="project-funding">Blog Post:</label>
+            <input class="form-input" type="text" id="blogPost" name="blogPost" />
+        </div>
+        <button type="submit" class="create">Create!</button>
+    </form>
+</div>
 
-<script src="./js/profile.js"></script>
+<h2 class="title">Your Blog Posts:</h2>
+
+    <div>
+        {{#each posts as |post|}}
+        <div class="blogPost">
+            <h3 class="blogPostTitle">{{post.title}}:</h3>
+                    {{#if post.blogPost}}
+                    <p class="blogPostData">{{ post.blogPost }}</p>
+                    <button class="postBtn edit_post" value = {{post.id}}>Edit</button>
+                    <button class="postBtn delete_recipe" value = {{post.id}}>Delete</button>
+                    {{/if }}
+        </div>
+        {{/each}}
+    </div>
+
+
+    <script src="./js/profile.js"></script>

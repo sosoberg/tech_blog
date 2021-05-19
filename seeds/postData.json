@@ -1,18 +1,23 @@
 [
     {
-      "title": "duqq",
-      "blogPost": "asdfasdfasdfasdfsad",
+      "title": "What is Lorem Ipsum?",
+      "blogPost": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
       "user_id": "1"
     },
     {
-      "title": "Sach",
-      "blogPost": "asdfasdfasdfasdfsad@gmail.com",
+      "title": "Where does it come from?",
+      "blogPost": "Contrary to popular belief, Lorem Ipsum is not simply random text. ",
       "user_id": "1"
 
     },
     {
-      "title": "soobee",
-      "blogPost": "test@test.com",
+      "title": "Why do we use it?",
+      "blogPost": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+      "user_id": "1"
+    },
+    {
+      "title": "Where can I get some?",
+      "blogPost": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.",
       "user_id": "1"
     }
 ]
