@@ -8,12 +8,15 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>{{ title }}</h1>
-    <p>{{ blogPost }}</p>
-    <p>{{ post.username }}</p>
+    <button id="blogPostBtn" value={{id}}>
+        <h1>{{ title }}</h1>
+        <p>{{ post.username }}</p>
+    </button>
     
     
 </body>
 </html>
 
 {{/each}}
+
+<script src="./js/script.js"></script>

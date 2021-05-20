@@ -1,3 +1,5 @@
+
+
 const newFormHandler = async (event) => {
     event.preventDefault();
   
@@ -21,6 +23,7 @@ const newFormHandler = async (event) => {
     }
   };
   
+  
   const delButtonHandler = async (event) => {
     if (event.target.hasAttribute('value')) {
       const id = event.target.getAttribute('value');
@@ -40,8 +43,8 @@ const newFormHandler = async (event) => {
   document
     .querySelector('.new-post-form')
     .addEventListener('submit', newFormHandler);
-  
-  document
-    .querySelector('.delete_recipe')
-    .addEventListener('click', delButtonHandler);
-  
+
+const deleteBtn = document.querySelectorAll(".delete_recipe")
+for (let i = 0; i < deleteBtn.length; i++) {
+  deleteBtn[i].addEventListener('click', delButtonHandler);
+};

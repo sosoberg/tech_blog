@@ -22,6 +22,7 @@
         {{#each posts as |post|}}
         <div class="blogPost">
             <h3 class="blogPostTitle">{{post.title}}:</h3>
+                <p>{{ user.post.username }}</p>
                     {{#if post.blogPost}}
                     <p class="blogPostData">{{ post.blogPost }}</p>
                     <button class="postBtn edit_post" value = {{post.id}}>Edit</button>
