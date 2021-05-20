@@ -1,0 +1,38 @@
+[
+    {
+        "comment": "this is so cool",
+        "post_id": "2"
+    },
+    {
+        "comment": "love this insite",
+        "post_id": "2"
+    },
+    {
+        "comment": "hello world",
+        "post_id": "2"
+    },
+    {
+        "comment": "this is so cool",
+        "post_id": "1"
+    },
+    {
+        "comment": "love this insite",
+        "post_id": "1"
+    },
+    {
+        "comment": "hello world",
+        "post_id": "1"
+    },
+    {
+        "comment": "this is so cool",
+        "post_id": "3"
+    },
+    {
+        "comment": "love this insite",
+        "post_id": "3"
+    },
+    {
+        "comment": "hello world",
+        "post_id": "3"
+    }
+]
