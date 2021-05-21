@@ -1,24 +1,29 @@
-
-    <h3>Author: {{ user.username }}</h3>
-    <h1>Title: {{ title }}</h1>
-    <p>Post: {{ blogPost }}</p>
-    <p>Created: {{format_date createdAt }}</p>
-    <div>
-        {{#each comments as |comment|}}
-            <div>
-                <p>{{comment.comment}}</p>
-                <p>{{format_time comment.createdAt}}</p>
+<div class="postPage">
+    <h3 class="author">Author: {{ user.username }}</h3>
+    <p class="timestamp">~ Written: {{format_date createdAt }}</p>
+    <div class="divstyle">
+        <h1 class="titleposttitle">Title: {{ title }}</h1>
+        <div class="moredivstyle">
+            <p class="posttitlestyle">Post: {{ blogPost }}</p>
+            <div class="postComment">
+                {{#each comments as |comment|}}
+                    <div class="comment">
+                        <p>{{comment.comment}}</p>
+                        <p class="time">~ {{format_time comment.createdAt}}</p>
+                    </div>
+                {{/each}}
             </div>
-        {{/each}}
+            <div class="commentSubmit">
+                <form class="newCommentForm">
+                    <label for="commentPost">User Comment:</label>
+                    <input class="form-input" type="text" id="commentPost" name="commentPost" />
+                    <button type="submit" id="postBtn" value={{ id }}>Submit</button>
+                </form>
+            </div>
+        </div>
     </div>
-    <div class="commentSubmit">
-        <form class="newCommentForm">
-            <label for="commentPost">User Comment:</label>
-            <input class="form-input" type="text" id="commentPost" name="commentPost" />
-            <button type="submit" id="postBtn" value={{ id }}>Submit</button>
-        </form>
-    </div>
-    
+</div>
+
 <script
 src="/js/post.js">
 </script>

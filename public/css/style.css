@@ -22,6 +22,47 @@ body {
     margin: 30px;
 }
 
+/* Homepage Page Styling */
+.mainPostGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.postDiv {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    border: 2px solid;
+    padding: 30px;
+    margin: 5px;
+}
+
+.mainBlogPost {
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+    width: 100%;
+}
+
+.postAuthor {
+    font-size: 25px;
+    margin: 12px;
+}
+
+.postTitle {
+    font-size: 20px;
+    border: 2px dashed;
+    padding: 15px;
+}
+
+.mainCreated {
+    margin-top: 10px;
+}
+
 /* Profile Page Styling */
 .userHeader {
     font-size: 30px;
@@ -79,4 +120,71 @@ body {
 	outline: inherit;
     font-size: 20px;
     padding-top: 5px;
+}
+
+/* Post Page Styling */
+.postPage {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 25px;
+}
+
+.author {
+    font-size: 30px;
+}
+
+.timestamp {
+    margin-top: 10px;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.divstyle {
+    border: 2px solid;
+    margin: 25px;
+}
+
+.titleposttitle {
+    margin: 10px 0px 0px 10px;
+}
+
+.moredivstyle{
+    border: 2px dashed;
+    margin: 25px;
+}
+
+.posttitlestyle {
+    margin: 25px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid;
+}
+
+.comment {
+    border: 2px solid;
+    margin: 5px 10px 0px 10px;
+}
+
+.time {
+    font-style: italic;
+    font-size: 15px;
+}
+
+.commentSubmit {
+    margin: 10px 0px 10px 5px;
+}
+
+@media only screen and (max-width: 1370px) {
+    .mainPostGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .postDiv {
+        margin-left: 30px;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .postDiv {
+        margin-left: 15px;
+    }
 }
