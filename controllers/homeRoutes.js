@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { User, Post } = require('../models');
+const { User, Post, Comment } = require('../models');
 const withAuth = require('../utils/auth');
 
 router.get('/', async (req, res) => {
@@ -22,6 +22,7 @@ router.get('/', async (req, res) => {
     // Pass serialized data and session flag into template
     res.render('homepage', { 
         posts, 
+        ...posts.users,
         logged_in: req.session.logged_in 
     });
   } catch (err) {
@@ -33,17 +34,24 @@ router.get('/post/:id', withAuth, async (req, res) => {
   try {
     const postData = await Post.findByPk(req.params.id, {
       include: [
+        User,
         {
-          model: User,
-          attributes: ['username'],
-        },
+          model: Comment,
+          include: [
+            User
+          ]
+        }
       ],
     });
 
     const post = postData.get({ plain: true });
 
+    console.log(post)
+
     res.render('post', {
       ...post,
+      ...post.comments,
+      ...post.users,
       logged_in: req.session.logged_in
     });
   } catch (err) {
@@ -55,7 +63,9 @@ router.get('/post/:id', withAuth, async (req, res) => {
 router.get('/profile', withAuth, async (req, res) => {
   const userData = await User.findByPk(req.session.user_id, {
     attributes: { exclude: ['password']},
-    include: [{ model: Post, attributes: ['id', 'title', 'blogPost', 'user_id'] }],
+    include: [
+      Post,
+    ]
   });
   let user = userData.get({ plain: true });
   res.render('profile', {

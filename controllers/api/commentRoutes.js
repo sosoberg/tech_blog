@@ -1,4 +1,5 @@
 const router = require('express').Router();
+const session = require('express-session');
 const { Comment } = require('../../models');
 const withAuth = require('../../utils/auth');
 
@@ -48,7 +49,7 @@ router.delete('/:id', withAuth, async (req, res) => {
     });
 
     if (!commentData) {
-      res.status(404).json({ message: 'No post found with this id!' });
+      res.status(404).json({ message: 'No comment found with this id!' });
       return;
     }
 

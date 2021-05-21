@@ -1,38 +1,47 @@
 [
     {
         "comment": "this is so cool",
-        "post_id": "2"
+        "post_id": "2",
+        "user_id": "2"
     },
     {
         "comment": "love this insite",
-        "post_id": "2"
+        "post_id": "2",
+        "user_id": "2"
     },
     {
         "comment": "hello world",
-        "post_id": "2"
+        "post_id": "2",
+        "user_id": "2"
     },
     {
         "comment": "this is so cool",
-        "post_id": "1"
+        "post_id": "1",
+        "user_id": "2"
     },
     {
         "comment": "love this insite",
-        "post_id": "1"
+        "post_id": "1",
+        "user_id": "2"
     },
     {
         "comment": "hello world",
-        "post_id": "1"
+        "post_id": "1",
+        "user_id": "2"
     },
     {
         "comment": "this is so cool",
-        "post_id": "3"
+        "post_id": "3",
+        "user_id": "2"
     },
     {
         "comment": "love this insite",
-        "post_id": "3"
+        "post_id": "3",
+        "user_id": "2"
     },
     {
         "comment": "hello world",
-        "post_id": "3"
+        "post_id": "3",
+        "user_id": "2"
     }
 ]
